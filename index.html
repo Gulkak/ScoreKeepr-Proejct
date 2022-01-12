@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>scoreKeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  </head>
+  <body>
+   <div class="container">
+       <div class="columns">
+<div class="column is-one-third is-offset-4" >
+    <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Table Tennis ScoreKeeper
+          </p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+        </div>
+        <img src="https://media.istockphoto.com/photos/ping-pong-or-table-tennis-background-with-rackets-picture-id503250996?b=1&k=20&m=503250996&s=170667a&w=0&h=v-LYPTA4IDNKpoKj4z--xiJpiYIEc5mlk_Ug1Tf2QKE=" class="is-square" alt="">
+        <h1 class="title is-1">
+          <span id="pAscoreContainer">0</span>
+          to
+          <span id="pBscoreContainer">0</span>
+        </h1>
+        <p class="subtitle is-6">
+            Use the buttons below to keep score
+        </p>
+        <label for="winScore" class="label is-medium is-inline">Winning score:</label>
+        <div class="select is-rounded">
+          <select name="" id="winScore">
+               <option value="3">3</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+           </div>
+       </select>
+        </div>
+        <footer class="card-footer">
+            <button id="pAbtn" class="button card-footer-item">+PlayerA</button>
+            <button id="pBbtn" class="button card-footer-item">+PlayerB</button>
+            <button id="resetBtn" class="is-warning button card-footer-item">Reset</button>
+          <!-- <a href="#" class="card-footer-item">Save</a> -->
+          <!-- <a href="#" class="card-footer-item">Edit</a> -->
+          <!-- <a href="#" class="card-footer-item">Delete</a> -->
+        </footer>
+      </div>
+</div>
+       </div>
+       <!-- <div class="select is-rounded">
+       <select name="" id="winScore">
+            <option value="3">3</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </div>
+    <!-- </select> -->
+    <!-- <button id="pAbtn">+PlayerA</button>
+    <button id="pBbtn">+PlayerB</button>
+    <button id="reseBtn">Reset</button> -->
+    <script src="app.js"></script>
+  </body>
+</html>
